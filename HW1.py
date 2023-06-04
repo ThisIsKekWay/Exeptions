@@ -41,8 +41,10 @@ def list_pointer(lst, num):
             print('Этот массив не содержит столько элементов')
             try:
                 num = int(input('Введите индекс снова '))
-            except ValueError:
+            except ValueError or NameError:
                 print('Введите число и только число')
+                continue
+
 
 
 def dic_pointer(dct, key):
